@@ -8,19 +8,19 @@ import pandas as pd
 # import seaborn as sns
 import numpy as np
 # import matplotlib.pyplot as plt
-from sklearn import cluster
+# from sklearn import cluster
 from sklearn.preprocessing import MinMaxScaler
-import random
-from random import randint
+# import random
+# from random import randint
 import time
 from input import input
 from get_result import get_result
 from read_pdf import read_pdf
-from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
-from pdfminer.converter import TextConverter
-from pdfminer.layout import LAParams
-from pdfminer.pdfpage import PDFPage
-from io import StringIO
+# from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
+# from pdfminer.converter import TextConverter
+# from pdfminer.layout import LAParams
+# from pdfminer.pdfpage import PDFPage
+# from io import StringIO
 
 # In[158]:
 
