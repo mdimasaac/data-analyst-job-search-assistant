@@ -64,7 +64,6 @@ def get_result():
     import random
     from random import randint
     import time
-    from st_aggrid import AgGrid as aggrid
 
     X_scaled, X_cat = read_data()
     X_new = pd.read_csv("set skills.csv")

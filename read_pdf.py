@@ -32,8 +32,6 @@ def convert_pdf_to_txt(path):
     retstr.close()
     return text
 
-# In[ ]:
-
 def get_scores(text):
     import pandas as pd
     querying = ["data","analy","sql","big data","query","entry","base","warehouse"] #A
@@ -47,15 +45,11 @@ def get_scores(text):
     A,B,C,D,E,F = [],[],[],[],[],[]
 
     scores = [A,B,C,D,E,F]
-    # description = df.description.tolist()
-    # for des in tqdm(description):
     for score, cat in list(zip(scores, category)):
         sc = []
         for i in cat:
             if i in text.lower():
                 sc.append(1)
-            # else:
-            #     sc.append(0)
         n = len(sc)/len(cat)
         score.append(round(n,2))
     df = pd.DataFrame()
@@ -67,13 +61,14 @@ def get_scores(text):
     df["dashboarding"] = F
     return df
 
-
-
 def read_pdf():
     import streamlit as st
     import time
     import matplotlib.pyplot as plt
     import numpy as np
+    import plotly.express as px
+    import plotly.graph_objects as go
+    import pandas as pd
 
     st.header("_Data Analyst Job Search Assistant_")
     st.subheader("Upload your CV. Your personal skills will be analyzed.")
@@ -109,15 +104,5 @@ def read_pdf():
                     time.sleep(2)
                     st.text("Successfully saved your data.")
                     time.sleep(.5)
-                    st.text('Please proceed to the "Get Result" page (see menu on the left)')
+                    st.text('Please proceed to the "Get Result" page.')
                     X_new.to_csv("set skills.csv", index = False)
-            
-
-
-# In[8]:
-
-
-# path = "Curriculum Vitae Muhammad Cakradewa.pdf"
-# text = convert_pdf_to_txt(path)
-# text.lower().replace("\n","")
-

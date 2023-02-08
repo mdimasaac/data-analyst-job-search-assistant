@@ -8,6 +8,9 @@ This project is written in python. The goal/purpose is to give user a job recomm
  <br>If you run the main.py file, you will be asked to either mark the checkboxes with clicks, or upload your CV in pdf format. You will find detailed info on how to run through the code below.
  <br>The final output will be a recommended job for you, that has similar specification to the skillsets you put in.
 
+## HOW TO USE THE RECOMMENDER
+This is a beta version. Meaning some of the functions are yet to be optimized. In this case, the scraper works for quite a long time, and is executing lots of scraping motion, which is unable to be done within a single day. It is still in development phase, so you can only use whatever jobs are previously scraped there. With time, you will realize that more and more of the job offers are not available anymore. But you can still try to use whatever's available inside the job database there.
+
 ## HOW TO RUN
  #### Streamlit
  - Open your terminal (iterm, git bash, cmd, etc.) and navigate to the folder.
