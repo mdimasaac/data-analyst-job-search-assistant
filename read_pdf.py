@@ -73,6 +73,8 @@ def read_pdf():
 
     st.header("_Data Analyst Job Search Assistant_")
     st.subheader("Upload your CV. Your personal skills will be analyzed.")
+    st.write("NOTE: This feature is currently under development. It can work only if you send your CV to me beforehand.")
+    st.markdown("Further Information: contact me at _mdimasaac@hotmail.com_")
     uploaded = st.file_uploader("Supported file format: pdf")
     if uploaded is not None:
         filename = uploaded.name
