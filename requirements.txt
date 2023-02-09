@@ -6,3 +6,4 @@ plotly==5.13.0
 pandas==1.2.3
 joblib==0.16.0
 scikit-learn
+pdfminer

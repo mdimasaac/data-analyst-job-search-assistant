@@ -69,6 +69,7 @@ def read_pdf():
     import plotly.express as px
     import plotly.graph_objects as go
     import pandas as pd
+    
 
     st.header("_Data Analyst Job Search Assistant_")
     st.subheader("Upload your CV. Your personal skills will be analyzed.")
