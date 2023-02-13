@@ -34,12 +34,12 @@ def convert_pdf_to_txt(path):
 
 def get_scores(text):
     import pandas as pd
-    querying = ["data","analy","sql","big data","query","entry","base","warehouse"] #A
-    engineering = ["python","data","analy","machine","learn","etl","oop","pipe","tensor","engineer","nlp"] #B
-    analysis = ["python","data","analy","eda","predict","machine","learn","test","explor","statisti"] #C
-    model_building = ["python","data","analy","machine","learn","predict","ml","model","train"] #D
-    scraping = ["python","data","analy","clean","mining","scrap","csv","json","api"] #E
-    dashboarding = ["bi","power","data","analy","dashboard","tableau","report","visuali"] #F
+    querying = ["data","analy","analy","sql","sql","sql","big data","query","entry","base","warehouse"] #A
+    engineering = ["python","python","data","analy","analy","machine","learn","etl","oop","pipe","pipe","tensor","engineer","nlp"] #B
+    analysis = ["python","python","python","data","analy","analy","eda","predict","machine","learn","test","explor","statisti"] #C
+    model_building = ["python","python","data","analy","analy","machine","machine","learn","predict","ml","model","model","train"] #D
+    scraping = ["python","python","python","data","analy","analy","clean","mining","scrap","csv","json","api"] #E
+    dashboarding = ["bi","bi","power","data","analy","analy","dashboard","tableau","tableau","tableau","report","visuali"] #F
     category = [querying, engineering, analysis, model_building, scraping, dashboarding]
 
     A,B,C,D,E,F = [],[],[],[],[],[]
