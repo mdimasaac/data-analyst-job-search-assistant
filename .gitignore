@@ -8,6 +8,8 @@ __pycache__/
 
 # large files
 *source.csv
+job source 1.csv
+job source 2.csv
 
 # Distribution / packaging
 .Python

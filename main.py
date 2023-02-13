@@ -2,25 +2,14 @@
 # coding: utf-8
 
 import streamlit as st
-# import plotly.express as px
-# import plotly.graph_objects as go
 import pandas as pd
-# import seaborn as sns
 import numpy as np
-# import matplotlib.pyplot as plt
-# from sklearn import cluster
 from sklearn.preprocessing import MinMaxScaler
-# import random
-# from random import randint
 import time
 from input import input
 from get_result import get_result
 from read_pdf import read_pdf
-# from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
-# from pdfminer.converter import TextConverter
-# from pdfminer.layout import LAParams
-# from pdfminer.pdfpage import PDFPage
-# from io import StringIO
+
 
 # In[158]:
 
@@ -75,7 +64,7 @@ def main():
             st.subheader("Things this _Job Search Assistant_ doesn't do:")
             st.markdown("- <h5>Generate your CV</h5>", unsafe_allow_html=True)
             st.markdown("- <h5>Send formally-written emails to the company</h5>", unsafe_allow_html=True)
-    
+
     elif (choice == "1. Load Dataset"):
         st.header("_Data Analyst Job Search Assistant_")
         readfile = st.button("Load Dataset")
