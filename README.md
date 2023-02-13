@@ -4,17 +4,29 @@ Ironhack Bootcamp Final Project
 ## ABOUT THE PROJECT
 This project is written in python. The goal/purpose is to give user a job recommendation based on the personal skills/preferences that the user needs to give in the user interface. There are two versions here:
  - If you open the _notebook_ file (STEP 1, STEP 2, STEP 3), you will find a simple graphical user interface (GUI) when you run the main file (STEP 3)
- - If you open the _python_ file instead (main.py), you will go directly to the streamlit window on a webpage. There you will find a different experience in running a python code. 
+ - If you open the _python_ file instead (main.py) (see details below how to run it), you will go directly to the streamlit window on a webpage. There you will find a different experience in running a python code. 
  <br>If you run the main.py file, you will be asked to either mark the checkboxes with clicks, or upload your CV in pdf format. You will find detailed info on how to run through the code below.
  <br>The final output will be a recommended job for you, that has similar specification to the skillsets you put in.
 
-## HOW TO USE THE RECOMMENDER
+## HOW TO USE THIS JOB SEARCH ASSISTANT
 This is a beta version. Meaning some of the functions are yet to be optimized. In this case, the scraper works for quite a long time, and is executing lots of scraping motion, which is unable to be done within a single day. It is still in development phase, so you can only use whatever jobs are previously scraped there. With time, you will realize that more and more of the job offers are not available anymore. But you can still try to use whatever's available inside the job database there.
 
-## HOW TO RUN
+## HOW TO RUN (Not Python user)
+- find the clickable link for the app to run on your browser
+- notice that you will see full available options there, but you can't use the "upload CV" function, unless you are following the "HOW TO RUN" for python users. The shared link only works with the "Set Skills" function. Apologize for the inconvenience.
+
+## HOW TO RUN (Python User)
+ #### First step
+ - clone repository (copy the repository link)
+ - open your file explorer where you want to save the repository
+ - right click, open terminal there
+ - type in "git clone ", then right click - paste the copied url. press enter
+ - you will have the full folder in that place where you did the git clone. now it's yours. enjoy.
+ - follow next step(s) below
+
  #### Streamlit
  - Open your terminal (iterm, git bash, cmd, etc.) and navigate to the folder.
- - Type "_streamlit run main.py_" without quotation marks.
+ - Type "_streamlit run main.py_" without quotation marks (install streamlit if necessary - see installation guid below)
  - It will open the page in your browser. Follow the instructions.
  - In the input section, you will need to pick either you fill in your skillsets manually or you upload your CV (pdf). If you do manual skillset, and then upload your CV, the previous skillset will be overwritten. And vice versa.
  - Please run the sections in the given order (1, 2, 3). You can try to go directly to number 3, but it might not work, because it requires your input before making a recommendation for you. The recommendation is personally tailored for the user, after all :)
